@@ -24,11 +24,6 @@ app.post('/', (req, res) => {
   };
 
   io.emit('new received message', message);
-  res.send(`
-    <Response>
-      <Message>Thanks for texting</Message>
-    </Response>
-  `);
 });
 
 // Socket Configuration
